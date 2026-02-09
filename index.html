@@ -1,0 +1,90 @@
+<!doctype html>
+<html lang="cs">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <title>O mně — Václav Trčka</title>
+  <link rel="stylesheet" href="styles.css">
+  <meta name="description" content="Osobní stránka Václava Trčky, student IT.">
+</head>
+<body>
+  <header class="site-header">
+    <div class="container">
+      <h1 class="logo">O mně</h1>
+      <nav class="main-nav" id="mainNav">
+        <a href="#about">O mně</a>
+        <a href="#skills">Dovednosti</a>
+        <a href="#contact">Kontakt</a>
+      </nav>
+      <button id="menuToggle" class="menu-toggle">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="profile-grid container">
+      <div class="card profile-card">
+        <img src="avatar.svg" alt="Avatar Václava Trčky" class="avatar">
+        <h2>Václav Trčka</h2>
+        <p class="muted">Student IT se zájmem o webové stránky a jejich úpravy</p>
+        <p>Rád experimentuji s vzhledem webů, jejich strukturou a snažím se porozumět tomu, jak fungují nejen vizuálně, ale i technicky na pozadí.</p>
+      </div>
+
+      <div class="card about-card" id="about">
+        <h3>O mně</h3>
+        <p class="lead">Jsem student se zájmem o informační technologie, především o webové stránky a jejich úpravy. Baví mě tvořit přehledné, funkční a moderní weby.</p>
+        <p>Aktuálně mám základní vzdělání, ale aktivně se učím nové věci i mimo školu. Rád experimentuji s vzhledem webů, jejich strukturou a snažím se porozumět tomu, jak fungují nejen vizuálně, ale i technicky na pozadí. Ve volném čase tvořím a testuji nové nápady z online zdrojů.</p>
+
+        <div class="hero-buttons">
+          <a class="btn btn-primary" href="#contact">Kontaktujte mě</a>
+          <a class="btn btn-outline" href="resume.pdf" target="_blank" rel="noopener">Stáhnout CV</a>
+        </div>
+      </div>
+
+      <div class="card skills-card" id="skills">
+        <h4>Dovednosti</h4>
+        <div class="badges">
+          <span class="badge">HTML</span>
+          <span class="badge">CSS</span>
+          <span class="badge">Základy JavaScriptu</span>
+          <span class="badge">Úprava a struktura webových stránek</span>
+          <span class="badge">Windows</span>
+          <span class="badge">Základní IT</span>
+        </div>
+      </div>
+
+      <div class="card contact-card" id="contact">
+        <h4>Kontakt</h4>
+        <p>Máte dotaz nebo nabídku? Neváhejte mě kontaktovat:</p>
+        <p class="contact-line"><svg class="icon" viewBox="0 0 24 24" width="18" height="18" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M3 5.5A2.5 2.5 0 015.5 3h13A2.5 2.5 0 0121 5.5v13a2.5 2.5 0 01-2.5 2.5h-13A2.5 2.5 0 013 18.5v-13z" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/><path d="M3 5l9 7 9-7" stroke="currentColor" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/></svg> <a href="mailto:trcka.vaclav@zak.spspb.cz">trcka.vaclav@zak.spspb.cz</a></p>
+
+        <form id="contactForm">
+          <label for="name">Jméno</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="message">Zpráva</label>
+          <textarea id="message" name="message" rows="5" required></textarea>
+
+          <div class="form-actions">
+            <button type="submit" class="btn btn-primary">Odeslat</button>
+            <button type="reset" class="btn btn-ghost">Vymazat</button>
+          </div>
+        </form>
+        <div id="formResult" class="form-result" aria-live="polite"></div>
+
+        <p class="note">Stáhnout CV – <a href="resume.pdf" target="_blank" rel="noopener">Stáhnout můj životopis ve formátu PDF</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>© 2026 Václav Trčka</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
